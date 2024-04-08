@@ -1,0 +1,44 @@
+{
+  "Servicios": [
+    {
+      "id": 1,
+      "nombre": "Pedicure",
+      "precio": 10
+    },
+    {
+      "id": 2,
+      "nombre": "Manicure",
+      "precio": 10
+    },
+    {
+      "id": 3,
+      "nombre": "Limpieza facial",
+      "precio": 20
+    },
+    {
+      "id": 4,
+      "nombre": "Maderoterapia",
+      "precio": 20
+    },
+    {
+      "id": 5,
+      "nombre": "Masaje relajante",
+      "precio": 15
+    },
+    {
+      "id": 6,
+      "nombre": "Depilacion de cejas",
+      "precio": 5
+    },
+    {
+      "id": 7,
+      "nombre": "Depilacion de axilas",
+      "precio": 5
+    },
+    {
+      "id": 8,
+      "nombre": "Depilacion de piernas",
+      "precio": 5
+    }
+  ]
+}

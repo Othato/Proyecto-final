@@ -1,0 +1,103 @@
+/* contacto.css */
+:root{
+    --Violeta-osc:#db2777;
+    --Rosa-claro: #f472b6;
+    --negro: #191919;
+    --Violeta-claro: #ec4899;
+    --Blanco: #fff;
+}
+
+/* Estilos para el mapa */
+.mapa {
+    height: 400px;
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Cambiar colores del mapa */
+.leaflet-control-attribution, .leaflet-control-zoom {
+    background-color: #ec4899;
+    color: #fff;
+    border: none;
+}
+
+.leaflet-control-attribution a {
+    color: #fff;
+}
+
+.leaflet-popup-content {
+    color: #191919;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la información de contacto */
+.informacion-contacto {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    color: #191919;
+}
+
+.informacion-contacto h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #ec4899;
+}
+
+.informacion-contacto p {
+    margin-bottom: 15px;
+}
+
+.informacion-contacto p:last-child {
+    margin-bottom: 0;
+}
+
+/* Estilos para la sección de redes sociales */
+.contactar-por {
+    font-size: 32px;
+    margin-top: 40px;
+    margin-bottom: 20px; /* Añadido para dar espacio */
+    color: #ec4899;
+    text-align: center; /* Añadido para centrar */
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.redes-sociales a {
+    margin: 0 10px;
+    font-size: 40px; /* Aumentado el tamaño */
+    color: #555;
+    text-decoration: none;
+}
+
+.redes-sociales a:hover {
+    color: var(--Violeta-osc)
+}
+
+@media (max-width: 768px) {
+    .informacion-contacto h2 {
+        font-size: 24px;
+    }
+
+    .informacion-contacto p {
+        font-size: 16px;
+    }
+
+    .contactar-por {
+        font-size: 24px;
+    }
+
+    .redes-sociales a {
+        font-size: 32px;
+    }
+}

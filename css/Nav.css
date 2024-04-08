@@ -1,0 +1,116 @@
+:root{
+    --Violeta-osc:#db2777;
+    --Rosa-claro: #f472b6;
+    --negro: #191919;
+    --Violeta-claro: #ec4899;
+    --Blanco: #fff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    background: var(--Violeta-osc);
+    height: 80px;
+    width: 100%;
+}
+
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logo{
+    height: 40px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: var(--Blanco);
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+li a.active, li a:hover{
+    background: var(--Rosa-claro);
+    transition: .5s;
+}
+
+.checkBtn{
+    font-size: 30px;
+    color: var(--Blanco);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.inicio {
+    background: url(/Img/FONDO8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: calc(100vh - 80px);
+}
+
+@media (max-width: 768px) {
+    .checkBtn {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: var(--Rosa-claro);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        z-index: 9999; /* Asegura que el menú se muestre encima de otros elementos */
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        color: var(--Blanco); /* Cambia el color de los enlaces del menú */
+    }
+
+    li a:hover,
+    li a.active {
+        background: none;
+        color: var(--negro);
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+

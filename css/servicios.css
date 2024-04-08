@@ -1,0 +1,90 @@
+/* Archivo servicios.css */
+:root {
+    --Violeta-osc: #db2777;
+    --Rosa-claro: #f472b6;
+    --negro: #191919;
+    --Violeta-claro: #ec4899;
+    --Blanco: #fff;
+}
+
+/* Estilos para los servicios */
+.servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    margin-bottom: 60px; /* Espacio adicional para el botón de WhatsApp */
+}
+
+.servicio-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px; /* Ancho máximo para dispositivos grandes */
+}
+
+.servicio {
+    background-color: var(--Blanco);
+    border: 2px solid var(--Violeta-osc);
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(50% - 20px); /* Mostrar de dos en dos en pantallas grandes */
+    text-align: center;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio h2 {
+    color: var(--Violeta-osc);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.servicio span {
+    color: var(--negro);
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.servicio img {
+    width: 200px; /* Tamaño fijo para las imágenes */
+    height: auto;
+    margin: 10px 0;
+    max-height: 200px;
+    object-fit: cover; /* Asegura que la imagen mantenga su proporción */
+}
+
+/* Estilos para el botón de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    background-color: var(--Rosa-claro);
+    color: var(--Blanco);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button i {
+    margin-right: 5px;
+}
+
+.whatsapp-button:hover {
+    background-color: var(--Violeta-claro);
+}
+
+/* Añadiendo regla de medios para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .servicio {
+        width: 100%; /* Mostrar de uno en uno en pantallas más pequeñas */
+    }
+}

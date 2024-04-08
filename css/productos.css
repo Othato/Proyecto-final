@@ -1,0 +1,155 @@
+/* Archivo productos.css */
+:root {
+    --Violeta-osc: #db2777;
+    --Rosa-claro: #f472b6;
+    --negro: #191919;
+    --Violeta-claro: #ec4899;
+    --Blanco: #fff;
+}
+
+/* Estilos para los productos */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.producto {
+    background-color: var(--Blanco);
+    border: 2px solid var(--Violeta-osc);
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(50% - 20px); /* Para mostrar de dos en dos */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.producto h2 {
+    color: var(--Violeta-osc);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.producto span {
+    color: var(--negro);
+    font-size: 1.25rem;
+    margin-bottom: 10px; /* Espacio adicional entre el precio y el botón */
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+    max-height: 200px; /* Tamaño máximo para las imágenes */
+}
+
+.agregar-carrito {
+    background-color: var(--Rosa-claro);
+    color: var(--Blanco);  /* Cambiado a blanco */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.agregar-carrito:hover {
+    background-color: var(--Violeta-claro);
+}
+
+/* Estilos para el carrito de compras */
+.carrito {
+    background-color: var(--Blanco);
+    border: 2px solid var(--Violeta-osc);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;  /* Alinear a la derecha */
+    margin-right: auto; /* Alinear a la izquierda */
+}
+
+.carrito h2 {
+    color: var(--Violeta-osc);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.lista-carrito {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.lista-carrito li {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+/* Estilos para los botones del carrito */
+.lista-carrito button {
+    background-color: var(--Rosa-claro);
+    color: var(--Blanco);  /* Cambiado a blanco */
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.lista-carrito button:hover {
+    background-color: var(--Violeta-claro);
+}
+
+/* Estilos para el botón "Vaciar Carrito" */
+.vaciar-carrito {
+    background-color: var(--Violeta-osc);
+    color: var(--Blanco);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.vaciar-carrito:hover {
+    background-color: var(--Violeta-claro);
+}
+
+/* Estilos para el botón de WhatsApp */
+.whatsapp-button {
+    display: inline-block;
+    background-color: var(--Rosa-claro);  /* Cambiado a rosa claro */
+    color: var(--Blanco);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.whatsapp-button i {
+    margin-right: 5px;
+}
+
+.whatsapp-button:hover {
+    background-color: var(--Violeta-claro);
+}
+
+@media screen and (max-width: 768px) {
+    .producto {
+        width: calc(100% - 20px);
+    }
+}

@@ -1,0 +1,46 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Pinturas de uñas",
+      "categoria": 1,
+      "precio": 10,
+      "imagen": "pinturas de uñas.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Crema facial",
+      "categoria": 1,
+      "precio": 15,
+      "imagen": "crema facial.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Mascarilla facial",
+      "categoria": 1,
+      "precio": 20,
+      "imagen": "mascarilla facial.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Brochas",
+      "categoria": 2,
+      "precio": 5,
+      "imagen": "brochas.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Labial",
+      "categoria": 2,
+      "precio": 5,
+      "imagen": "labial.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "Rimel",
+      "categoria": 2,
+      "precio": 5,
+      "imagen": "rimel.jpg"
+    }
+  ]
+}

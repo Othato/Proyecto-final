@@ -1,0 +1,24 @@
+:root{
+    --Violeta-osc:#db2777;
+    --Rosa-claro: #f472b6;
+    --negro: #000;
+    --Violeta-claro: #ec4899;
+    --Blanco: #fff;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    padding-top: 16rem;
+    color: #000;
+}
+
+p{
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: dashed;
+    color: #000;
+}
+
