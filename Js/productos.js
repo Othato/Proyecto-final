@@ -76,7 +76,7 @@ fetch('/db.json') // Ruta relativa a la raíz del proyecto
 
             // Agregar información del producto
             productoElement.innerHTML = `
-                <img src="/img/${producto.imagen}" alt="${producto.nombre}">
+                <https://forever-life.onrender.com/img/${producto.imagen}}">
                 <h2>${producto.nombre}</h2>
                 <span class="precio">Precio: $${producto.precio.toFixed(2)}</span>
                 <button class="agregar-carrito">Agregar al carrito</button>
