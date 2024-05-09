@@ -113,7 +113,7 @@ function generarMensajeWhatsApp(productos) {
     let mensaje = 'Buenas tardes, quisiera pedir estos productos:\n';
 
     productos.forEach(producto => {
-        mensaje += `${producto.nombre} x${producto.cantidad} - ${(producto.precio * producto.cantidad).toFixed(2)}\n`;
+        mensaje += `${producto.nombre} x${producto.cantidad} - $${(producto.precio * producto.cantidad).toFixed(2)}\n`;
     });
 
     return encodeURIComponent(mensaje); // Codificar el mensaje para que se muestre correctamente en el enlace de WhatsApp
