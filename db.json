@@ -5,21 +5,21 @@
       "nombre": "Pinturas de uñas",
       "categoria": 1,
       "precio": 10,
-      "imagen": "pinturas de uñas.jpg"
+      "imagen": "pinturas-de-uñas.jpg"
     },
     {
       "id": 2,
-      "nombre": "Crema facial",
+      "nombre": "Crema-facial",
       "categoria": 1,
       "precio": 15,
-      "imagen": "crema facial.jpg"
+      "imagen": "crema-facial.jpg"
     },
     {
       "id": 3,
       "nombre": "Mascarilla facial",
       "categoria": 1,
       "precio": 20,
-      "imagen": "mascarilla facial.jpg"
+      "imagen": "mascarilla-facial.jpg"
     },
     {
       "id": 4,
