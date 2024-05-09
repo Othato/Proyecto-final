@@ -74,16 +74,13 @@ fetch('/db.json') // Ruta relativa a la raíz del proyecto
             const productoElement = document.createElement('div');
             productoElement.classList.add('producto');
 
-     // Agregar información del producto
+            // Agregar información del producto
             productoElement.innerHTML = `
                 <img src="/Img/${producto.imagen}" alt="${producto.nombre}">
                 <h2>${producto.nombre}</h2>
                 <span class="precio">Precio: $${producto.precio.toFixed(2)}</span>
                 <button class="agregar-carrito">Agregar al carrito</button>
             `;
-
-`;
-
 
             // Agregar el elemento del producto al contenedor de productos
             productosContainer.appendChild(productoElement);
@@ -134,3 +131,4 @@ function guardarCarritoEnLocalStorage() {
 
 // Llamar a actualizarCarrito() para cargar los productos del localStorage
 actualizarCarrito();
+
