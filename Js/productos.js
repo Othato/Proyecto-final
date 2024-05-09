@@ -74,12 +74,13 @@ fetch('/db.json') // Ruta relativa a la raíz del proyecto
             const productoElement = document.createElement('div');
             productoElement.classList.add('producto');
 
-        productoElement.innerHTML = `
-    <img src="https://forever-life.onrender.com/img/${producto.imagen}" alt="${producto.nombre}">
-    <h2>${producto.nombre}</h2>
-    <span class="precio">Precio: $${producto.precio.toFixed(2)}</span>
-    <button class="agregar-carrito">Agregar al carrito</button>
-`;
+     // Agregar información del producto
+            productoElement.innerHTML = `
+                <img src="/img/${producto.imagen}" alt="${producto.nombre}">
+                <h2>${producto.nombre}</h2>
+                <span class="precio">Precio: $${producto.precio.toFixed(2)}</span>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            `;
 
 `;
 
