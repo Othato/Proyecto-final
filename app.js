@@ -22,7 +22,7 @@ const bodyParser = require('body-parser');
 app.use('/css', express.static(path.resolve(__dirname, 'css')));
 
 // Ruta estática para los archivos de imagen
-app.use('/img', express.static(path.resolve(__dirname, 'img')));
+app.use('/img', express.static(path.resolve(__dirname, 'Img')));
 
 // Ruta estática para los archivos JavaScript
 app.use('/js', express.static(path.resolve(__dirname, 'Js')));
